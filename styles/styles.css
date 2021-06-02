@@ -1,0 +1,44 @@
+/* Navigation bar */
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #093640;
+}
+
+nav .active {
+    text-decoration: underline;
+}
+
+.main-menu li{
+    padding: 30px;
+}
+
+.icon-menu {
+    justify-content: right;
+    padding-right: 50px;
+}
+
+nav .icon {
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 0px 0px; 
+}
