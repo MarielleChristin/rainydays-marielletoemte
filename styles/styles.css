@@ -1,16 +1,16 @@
-/* Navigation bar */
+/* Navigation bar - web */
 
 header {
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     justify-content: space-between;
 }
 
 .logo {
     width: 150px;
-    height: 70px;
-    margin-top: 20px;
+    height: 90px;
+    margin: 20px auto;
     padding-left: 50px;
 }
 
@@ -28,6 +28,10 @@ nav .active {
     text-decoration: underline;
 }
 
+nav a:hover {
+    font-weight: bold;
+}
+
 .main-menu li{
     padding: 30px;
 }
@@ -37,8 +41,84 @@ nav .active {
     padding-right: 50px;
 }
 
+.icon-menu li {
+    padding:10px;
+}
+
 nav .icon {
-    height: 20px;
-    width: 20px;
-    margin: 0px 0px 0px 0px; 
+    height: 30px;
+    width: 30px;
+}
+
+/* Hamburger nav */
+
+.hamburger img {
+    height: 30px;
+    width: 30px;
+    padding: 40px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+/* welcome page */
+
+.welcome {
+    background-color: burlywood;
+    min-height: 500px;
+}
+
+/* Media queries */
+
+@media (max-width:1200px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+        grid-column: 3;
+        order: -1;
+        }
+    
+    .main-menu {
+        text-align: left;
+        width: 500px;
+        display: none;
+    }
+
+    .main-menu li {
+        display: flex;
+    }
+
+    #hamburger:checked + .main-menu {
+        display: flex;
+    }
+    
+    nav a:hover {
+        font-weight: bold;
+    }
+
+    .logo {
+        display: flex;
+        width: 150px;
+        height: 90px;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .icon-menu {
+        display: flex;
+    }
+
+    .icon-menu .icon-hide {
+        display: none;
+        margin: 0px;
+    }
 }
