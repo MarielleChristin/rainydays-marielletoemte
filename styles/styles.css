@@ -90,26 +90,23 @@ label,
     position: relative;
     height: 170px;
     width: 400px;
-    object-fit: cover;
-    top: 50vh;
-    left: 22vh;
+    top: 450px;
+    left: 20%;
     border-radius: 30px;
 }
 
 .welcome-images__product img {
-    position: absolute;
+    position: relative;
     height: 550px;
     width: 400px;
-    object-fit: cover;
-    top: 13vh;
-    left: 44vh;
+    left: 40%;
     border-radius: 30px;
 }
 
 .welcome-content {
     height: 300px;
     width: 500px;
-    margin-top: 360px;
+    margin-top: 40%;
 }
 
 .welcome-content h1 {
@@ -118,7 +115,7 @@ label,
 
 .welcome-content p {
     font-size: 1.2em;
-    margin-top: 35px;
+    margin-top: 5%;
 }
 
 .welcome-content .cta {
