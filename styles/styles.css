@@ -64,10 +64,6 @@ label,
     display: none;
 }
 
-
-
-
-
 /* welcome page */
 
 .welcome {
@@ -78,7 +74,6 @@ label,
     background-color: #818181;
     min-height: 800px;
     background-repeat: no-repeat;
-    position: relative;
     color: #093640;
 }
 
@@ -86,27 +81,38 @@ label,
     position: relative;
 }
 
-.welcome-images__styling img{
-    position: relative;
-    height: 170px;
-    width: 400px;
-    top: 450px;
-    left: 20%;
+.welcome-images__styling {
+    background-image: url("../images/welcome-image_styling.jpg");
+    height: 15%;
+    width: 40%;
+    margin-top: 50%;
+    left: 30%;
     border-radius: 30px;
+    position: absolute;
+}
+
+.welcome-images__product {
+    background-color: white;
+    height: 60%;
+    width: 40%;
+    left: 45%;
+    top: 20%;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 10;
 }
 
 .welcome-images__product img {
-    position: relative;
-    height: 550px;
-    width: 400px;
-    left: 40%;
+    height: 100%;
+    width: 100%;
     border-radius: 30px;
 }
 
 .welcome-content {
-    height: 300px;
-    width: 500px;
+    height: 50%;
+    width: 60%;
     margin-top: 40%;
+    float: left;
 }
 
 .welcome-content h1 {
