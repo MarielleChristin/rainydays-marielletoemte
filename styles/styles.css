@@ -72,7 +72,7 @@ label,
     background-image: url("../images/welcome-background.jpg");
     background-size: cover;
     background-color: #818181;
-    min-height: 800px;
+    min-height: 700px;
     background-repeat: no-repeat;
     color: #093640;
 }
