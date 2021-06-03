@@ -1,9 +1,13 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
 /* Navigation bar - web */
 
 header {
     display: flex;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     justify-content: space-between;
 }
 
@@ -41,13 +45,10 @@ nav a:hover {
     padding-right: 50px;
 }
 
-.icon-menu li {
-    padding:10px;
-}
-
 nav .icon {
     height: 30px;
     width: 30px;
+    padding:10px;
 }
 
 /* Hamburger nav */
@@ -58,18 +59,16 @@ nav .icon {
     padding: 40px;
 }
 
-.hamburger {
-    display: none;
-}
-
+label, 
 #hamburger {
     display: none;
 }
 
+
 /* welcome page */
 
 .welcome {
-    background-color: burlywood;
+    background-color: lightgrey;
     min-height: 500px;
 }
 
@@ -78,27 +77,27 @@ nav .icon {
 @media (max-width:1200px) {
     .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
-    .hamburger {
+    .hamburger,
+    label   {
         display: flex;
         grid-column: 3;
         order: -1;
         }
     
     .main-menu {
-        text-align: left;
-        width: 500px;
+        width: 100%;
         display: none;
-    }
-
-    .main-menu li {
-        display: flex;
+        margin-top: 100px;
+        background-color: #fff;
     }
 
     #hamburger:checked + .main-menu {
         display: flex;
+        float: left;
+        position: fixed;
     }
     
     nav a:hover {
@@ -110,15 +109,5 @@ nav .icon {
         width: 150px;
         height: 90px;
         margin: 20px auto;
-        align-items: center;
-    }
-
-    .icon-menu {
-        display: flex;
-    }
-
-    .icon-menu .icon-hide {
-        display: none;
-        margin: 0px;
     }
 }
