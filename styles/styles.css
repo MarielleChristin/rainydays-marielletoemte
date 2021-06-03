@@ -65,12 +65,69 @@ label,
 }
 
 
+
+
+
 /* welcome page */
 
 .welcome {
-    background-color: lightgrey;
-    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url("../images/welcome-background.jpg");
+    background-size: cover;
+    min-height: 900px;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+.welcome-images {
+    position: relative;
+}
+
+.welcome-images__styling img{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    top: 450px;
+    left: 350px;
+    border-radius: 30px;
+}
+
+.welcome-images__product img {
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+    top: 130px;
+    left: 600px;
+    border-radius: 30px;
+}
+
+.welcome-content {
+    height: 300px;
+    width: 500px;
+    margin-top: 360px;
+}
+
+.welcome-content h1 {
+    font-size: 2em;
+}
+
+.welcome-content p {
+    font-size: 1.3em;
+    margin-top: 35px;
+}
+
+.welcome-content .cta {
+    background-color: #C64700;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin-top: 700px;
+}
+
 
 /* Media queries */
 
@@ -91,13 +148,13 @@ label,
         width: 100%;
         display: none;
         margin-top: 100px;
-        background-color: #fff;
     }
 
     #hamburger:checked + .main-menu {
         display: flex;
         float: left;
         position: fixed;
+        background-color: #fff;
     }
     
     nav a:hover {
