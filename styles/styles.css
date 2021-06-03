@@ -75,9 +75,11 @@ label,
     grid-template-columns: repeat(2, 1fr);
     background-image: url("../images/welcome-background.jpg");
     background-size: cover;
-    min-height: 900px;
+    background-color: #818181;
+    min-height: 800px;
     background-repeat: no-repeat;
     position: relative;
+    color: #093640;
 }
 
 .welcome-images {
@@ -86,21 +88,21 @@ label,
 
 .welcome-images__styling img{
     position: relative;
-    height: 200px;
+    height: 170px;
     width: 400px;
     object-fit: cover;
-    top: 450px;
-    left: 350px;
+    top: 50vh;
+    left: 22vh;
     border-radius: 30px;
 }
 
 .welcome-images__product img {
     position: absolute;
-    height: 600px;
-    width: 500px;
+    height: 550px;
+    width: 400px;
     object-fit: cover;
-    top: 130px;
-    left: 600px;
+    top: 13vh;
+    left: 44vh;
     border-radius: 30px;
 }
 
@@ -111,11 +113,11 @@ label,
 }
 
 .welcome-content h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .welcome-content p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 35px;
 }
 
@@ -148,6 +150,7 @@ label,
         width: 100%;
         display: none;
         margin-top: 100px;
+        z-index: 100;
     }
 
     #hamburger:checked + .main-menu {
