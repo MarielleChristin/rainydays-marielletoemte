@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', arial, sans-serif;
 }
 
 /* Navigation bar - web */
@@ -33,7 +33,7 @@ nav .active {
 }
 
 nav a:hover {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 .main-menu li{
@@ -92,7 +92,6 @@ label,
 }
 
 .welcome-images__product {
-    background-color: white;
     height: 60%;
     width: 40%;
     left: 45%;
@@ -132,6 +131,36 @@ label,
     margin-top: 700px;
 }
 
+/*  New in section  */
+
+.new-in h2 {
+    text-align: center;
+    margin: 50px 0px;
+    color: #093640;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 4(1fr);
+    align-items: center;
+    float: left;
+    margin: auto 20px;
+    min-height: 500px;
+}
+
+.featured img {
+    height: 350px;
+    width: auto;
+    border-radius: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: saddlebrown;
+    padding: 0px 20px;
+    text-align: center;
+}
 
 /* Responsive nav */
 
@@ -149,7 +178,7 @@ label,
         }
     
     .main-menu {
-        width: 100%;
+        width: 250px;
         display: none;
         margin-top: 100px;
         z-index: 100;
@@ -158,7 +187,7 @@ label,
     #hamburger:checked + .main-menu {
         display: flex;
         float: left;
-        position: fixed;
+        position:absolute;
         background-color: #fff;
     }
     
@@ -181,7 +210,6 @@ label,
     }
     
     .welcome-images__product {
-        background-color: white;
         height: 70%;
         width: 50%;
         left: 25%;
@@ -210,7 +238,6 @@ label,
      }
      
      .welcome-images__product {
-         background-color: white;
          height: 80%;
          width: 70%;
          left: 20%;
@@ -230,3 +257,4 @@ label,
          margin-top: 10%;
      }
 }
+
