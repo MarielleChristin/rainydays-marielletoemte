@@ -86,15 +86,15 @@ label,
     height: 15%;
     width: 40%;
     margin-top: 50%;
-    left: 30%;
+    left: 20%;
     border-radius: 30px;
     position: absolute;
 }
 
 .welcome-images__product {
     height: 60%;
-    width: 40%;
-    left: 45%;
+    width: 50%;
+    left: 40%;
     top: 20%;
     border-radius: 30px;
     position: absolute;
@@ -129,6 +129,7 @@ label,
     padding: 15px 50px;
     border-radius: 10px;
     margin-top: 700px;
+    font-size: 1em;
 }
 
 /*  New in section  */
