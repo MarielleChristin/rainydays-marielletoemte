@@ -29,7 +29,7 @@ a {
 }
 
 nav .active {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -133,38 +133,44 @@ label,
 
 /*  New in section  */
 
-.new-in h2 {
-    text-align: center;
-    margin: 50px 0px;
+.new-in {
+    display: flex;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-left: 5%;
+}
+
+.header {
     color: #093640;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.featured {
-    display: grid;
-    grid-template-columns: 4(1fr);
-    align-items: center;
-    float: left;
-    margin: auto 20px;
-    min-height: 500px;
+.new-in .products {
+    width: 25%;
+    flex-direction: column;
 }
 
-.featured img {
-    height: 350px;
-    width: auto;
+.products img {
     border-radius: 20px;
+    height: 70%;
+    width: 80%;
 }
 
 /* footer */
 
 footer {
-    background-color: saddlebrown;
-    padding: 0px 20px;
     text-align: center;
+    background-color: #77543F;
+    padding: 20px;
+    width: 100%;
 }
 
-/* Responsive nav */
+/* Media queries */
 
 @media (max-width:1200px) {
+    /* responsive nav */ 
     .header {
         display: flex;
         justify-content: center;
@@ -201,6 +207,7 @@ footer {
         height: 90px;
         margin: 20px auto;
     }
+    /* responsive new-in */
 }
 
 @media (max-width:1300px) {
@@ -257,4 +264,3 @@ footer {
          margin-top: 10%;
      }
 }
-
