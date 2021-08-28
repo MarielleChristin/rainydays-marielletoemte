@@ -1,8 +1,39 @@
 body {
     font-family: 'Helvetica Neue', arial, sans-serif;
 }
+h1 {
+    color:#093640;
+    text-align: center;
+}
 
-/* Navigation bar - web */
+/* Skip content */
+
+a.skip-main {
+    left:-999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color: black;
+    left: auto;
+    top: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+
+/* Navigation bar */
 
 header {
     display: flex;
@@ -64,7 +95,7 @@ label,
     display: none;
 }
 
-/* welcome page */
+/* welcome section */
 
 .welcome {
     display: grid;
@@ -72,7 +103,7 @@ label,
     background-image: url("../images/welcome-background.jpg");
     background-size: cover;
     background-color: #818181;
-    min-height: 700px;
+    min-height: 500px;
     background-repeat: no-repeat;
     color: #093640;
 }
@@ -83,20 +114,20 @@ label,
 
 .welcome-images__styling {
     background-image: url("../images/welcome-image_styling.jpg");
-    height: 15%;
-    width: 40%;
-    margin-top: 50%;
+    height: 100px;
+    width: 250px;
+    margin-top: 40%;
     left: 20%;
-    border-radius: 30px;
+    border-radius: 20px;
     position: absolute;
+    opacity: 70%;
 }
 
 .welcome-images__product {
-    height: 60%;
     width: 50%;
     left: 40%;
-    top: 20%;
-    border-radius: 30px;
+    top: 8%;
+    border-radius: 20px;
     position: absolute;
     z-index: 10;
 }
@@ -104,22 +135,22 @@ label,
 .welcome-images__product img {
     height: 100%;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 25px;
 }
-
 .welcome-content {
     height: 50%;
     width: 60%;
-    margin-top: 40%;
+    margin-top: 20%;
 }
 
 .welcome-content h1 {
     font-size: 1.5em;
+    text-align: left;
 }
 
 .welcome-content p {
     font-size: 1.2em;
-    margin-top: 5%;
+    margin-bottom: 30px;
 }
 
 .welcome-content .cta {
@@ -128,7 +159,6 @@ label,
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 10px;
-    margin-top: 700px;
     font-size: 1em;
 }
 
@@ -141,7 +171,7 @@ label,
     padding-left: 5%;
 }
 
-.header {
+.title-newin {
     color: #093640;
     width: 100%;
     text-align: center;
@@ -155,7 +185,6 @@ label,
 
 .products img {
     border-radius: 20px;
-    height: 70%;
     width: 80%;
 }
 
@@ -164,7 +193,60 @@ label,
 footer {
     text-align: center;
     background-color: #77543F;
+    color: #fff;
     padding: 20px;
+    overflow: hidden;
+    width: auto;
+}
+
+/* About page */
+
+.about-img {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/marek-piwnicki-OCHliW4m-2c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-company {
+    text-align: center;
+    width: auto;
+    min-height: 300px;
+    margin: 20px 25px;
+}
+
+/* contact page */
+
+.contact-form,
+.info  {
+    width: 50%;
+    height: 450px;
+    float: left;
+    padding-top: 50px;
+}
+
+.contact-form {
+    margin-left: 5%;    
+}
+
+.info {
+    margin-left: -5%;
+}
+
+.contact label {
+    display: inherit;
+    color: #C64700;
+    margin: 5px auto;
+
+}
+
+.submit {
+    display: inherit;
+    background-color: #C64700;
+    height: 40px;
+    width: 120px;
+    color: #fff;
 }
 
 /* Media queries */
@@ -267,37 +349,38 @@ footer {
 
     /*  New in section  */
 
-.new-in {
-    display: grid;
-    max-width: 700px;
-    margin: 50px auto;
-    padding-left: 5%;
-    justify-content: center;
-}
+    .new-in {
+    display: flex;
+    flex-wrap: wrap;
+    }
 
-.header {
+    .title-newin {
     color: #093640;
     width: 100%;
     text-align: center;
     padding-top: 20px;
+    }
+
+    .new-in .products {
+      width: 50%;
+    }
+
+    /* contact */
+    .contact-form,
+    .info  {
+    width: 100%;
+    height: 450px;
+    float: left;
+    padding-top: 30px;
+    }
+
+    .info {
+        margin-left: 5%;
+    }
 }
 
-.new-in .products {
-    display: flex;
-    width: 250px;
-    height: 300px;
-    flex-direction: column;
-    margin-bottom: 15%;
-}
-
-.products img {
-    border-radius: 20px;
-    height: 70%;
-    width: 80%;
-}
-
-.products p {
-    margin-bottom: 500%; 
-}
-
+@media (max-width:450px) {
+    .new-in .products {
+        width: auto;  
+    }
 }

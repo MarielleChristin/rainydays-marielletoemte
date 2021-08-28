@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>RainyDays | Home</title>
   <meta name="description" content="Rainydays - Pushing the comfort zone">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
  <header>
-    <a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="RainyDays_Logo" class="logo"></a>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="Logo home" class="logo"></a>
     <div class="hamburger">
-      <label for="hamburger"><img src="icons/menu.jpg"></label>
+      <label for="hamburger" class="menu-button"><img src="icons/menu.jpg"></label>
       <input type="checkbox" id="hamburger">
       <section class="main-menu">
         <nav>
           <ul>
             <li><a href="women.html">Women</a></li>
-            <li><a href="men.html">Men</li>
+            <li><a href="men.html">Men</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -26,10 +27,10 @@
    <section class="icon-menu"> 
     <nav>
       <ul>
-        <li><img src="icons/search.jpg" alt="search icon" class="icon hide"></li>
-        <li><img src="icons/user.jpg" alt="user icon" class="icon hide"></li>
-        <li><img src="icons/heart.jpg" alt="heart icon" class="icon hide"></li>
-        <li><img src="icons/shopping-cart.jpg" alt="shopping cart icon" class="icon"></a></li>
+        <li><img src="icons/search.jpg" alt="search" class="icon hide"></li>
+        <li><img src="icons/user.jpg" alt="user page" class="icon hide"></li>
+        <li><img src="icons/heart.jpg" alt="liked page" class="icon hide"></li>
+        <li><a href="checkout.html"><img src="icons/shopping-cart.jpg" alt="shopping cart" class="icon"></a></li>
       </ul>
     </nav>
    </section>
@@ -41,31 +42,31 @@
        <div class="welcome-images__product"><img src="images/welcome-image_product.jpg" alt="woman in raincoat"></div>
      </section>
      <section class="welcome-content">
-       <h1>RainyDays</h1>
+       <h1 id="main" tabindex="-1">RainyDays</h1>
        <p>Do you love hiking in the forest? Do you love commuting to work? Do you love outdoors adventures, but you’re missing that all-in-one reliable jacket? We are ready to push the comfort zone with you!</p>
        <p><a href="women.html" class="cta">Shop Now</a></p>
      </section>
    </section>
-   <h2 class="header">New In</h2>
+   <h2 class="title-newin">New In</h2>
    <section class="new-in">
      <div class="products">
-       <img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/>
-       <h3>Rondane</h3>
+       <a href="womensjacket.html"><img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/></a>
+       <a href="womensjacket.html"><h3>Rondane</h3></a>
        <p>NOK599</p>
      </div>
      <div class="products">
-      <img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/>
-      <h3>Banff</h3>
+      <a href="womensjacket.html"><img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/></a>
+      <a href="womensjacket.html"><h3>Banff</h3></a>
       <p>NOK599</p>
     </div>
     <div class="products">
-      <img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/>
-      <h3>Serengeti</h3>
+      <a href="womensjacket.html"><img src="images/welcome-image_product.jpg" alt="man wearing jacket"/></a>
+      <a href="womensjacket.html"><h3>Serengeti</h3></a>
       <p>NOK599</p>
     </div>
     <div class="products">
-      <img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/>
-      <h3>Denali</h3>
+      <a href="womensjacket.html"><img src="images/welcome-image_product.jpg" alt="woman wearing jacket"/></a>
+      <a href="womensjacket.html"><h3>Denali</h3></a>
       <p>NOK599</p>
     </div>
    </section>

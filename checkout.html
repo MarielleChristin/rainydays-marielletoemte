@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RainyDays | Checkout </title>
+  <meta name="description" content="Rainydays - checkout">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/checkout.css" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="Logo home" class="logo"></a>
+    <div class="hamburger">
+      <label for="hamburger"><img src="icons/menu.jpg"></label>
+      <input type="checkbox" id="hamburger">
+      <section class="main-menu">
+        <nav>
+          <ul>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+       </nav>
+      </section>
+    </div>
+   <section class="icon-menu"> 
+    <nav>
+      <ul>
+        <li><img src="icons/search.jpg" alt="search" class="icon hide"></li>
+        <li><img src="icons/user.jpg" alt="user page" class="icon hide"></li>
+        <li><img src="icons/heart.jpg" alt="liked page" class="icon hide"></li>
+        <li><a href="checkout.html"><img src="icons/shopping-cart.jpg" alt="shopping cart" class="icon"></a></li>
+      </ul>
+    </nav>
+   </section>
+ </header>
+ <main>
+   <h1 id="main" tabindex="-1">Checkout</h1>
+   <form>
+     <section class="first">
+       <fieldset>
+        <h2>Shipping details</h2>
+        Required fields&#42;
+        <p>
+        <label for="fullname">Full name&#42;</label>
+        <input type="text" id="fullname" name="fullname">
+        </p>
+        <p>
+        <label for="country">Country&#42;</label>
+        <input type="text" id="country" name="country">
+        </p>
+        <p>
+        <label for="adress">Adress&#42;</label>
+        <input type="text" id="adress" name="adress">
+        </p>
+        <p>
+        <label for="zip">Postcode/ ZIP&#42;</label>
+        <input type="number" id="zip" name="zip">
+        </p>
+        <h2>Contact information</h2>
+        <label for="email">Email&#42;</label>
+        <input type="text" id="email" name="email">
+        <p>you will be able to create an account after purchasing</p>
+       </fieldset>
+     </section>
+     <section class="second">
+       <fieldset>
+         <h2>Payment method</h2>
+         <fieldset>
+           <input type="radio" name="payment" value="card" id="card"><label for="card" class="radio">Card</label>
+          <p>
+            <label for="number">Card number&#42;</label>
+            <input type="tel" id="number" name="number">
+          </p>
+          <p>
+            <label for="date">Expiration date&#42;</label>
+            <input type="date" id="date" name="date">
+          </p>
+         </fieldset>
+         <fieldset>
+          <input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal" class="radio">PayPal</label>
+         </fieldset>
+       </fieldset>
+     </section>
+   </form>
+   <section class="third">
+    <fieldset>
+      <div class="order">
+        <h2>Your order</h2>
+        <table>
+          <tr>
+            <td class="left">PRODUCT</td>
+            <td class="right">TOTAL</td>
+          </tr>
+          <tr>
+            <td class="left">Rondane</td>
+            <td class="right">NOK599</td>
+          </tr>
+          <tr>
+            <td class="left">Shipping</td>
+            <td class="right">FREE SHIPPING</td>
+          </tr>
+          <tr>
+            <td class="left">TOTAL</td>
+            <td class="right">NOK599</td>
+          </tr>
+        </table>
+        <p><a href="success.html"><input type="submit" value="Place order" id="order"></a></p>
+      </div>
+    </fieldset>
+  </section>
+ </main>
+ <footer>Copyright&copy;</footer>
+</body>
+</html>

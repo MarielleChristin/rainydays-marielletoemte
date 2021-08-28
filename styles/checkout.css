@@ -1,0 +1,100 @@
+h1 {
+    color: #093640;
+    text-align: center;
+}
+
+h2 {
+    color:#C64700;
+}
+
+form label {
+    display: block;
+}
+
+/* CHECKOUT PAGE */
+
+#order {
+    background-color: #C64700;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 1em;
+}
+
+.radio {
+  display: inline;
+  font-weight: bold;
+}
+
+.first,
+.second,
+.third {
+    width: 33%;
+    float: left;
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* SUCCESS PAGE */
+
+.success {
+    width:max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td {
+    width: 150px;
+    height: 30px;
+    border-bottom: solid 1px #093640;
+}
+
+img {
+    height: 40px;
+}
+
+#track {
+    background-color: #C64700;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 1em;
+}
+
+footer {
+    width: 100%;
+    margin-top: 40px;
+    float: left;
+}
+
+@media (max-width:800px) {
+    .first,
+    .second,
+    .third {
+      width: 50%;
+      float: left;
+      text-align: left;
+    }
+}
+
+@media (max-width:500px) {
+    .first,
+    .second,
+    .third {
+      width: 100%;
+      float: left;
+      text-align: left;
+    }
+
+}

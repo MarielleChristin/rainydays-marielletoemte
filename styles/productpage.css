@@ -1,0 +1,153 @@
+h1{
+    color: #093640;
+    text-align: center;
+}
+
+/* filter section */
+
+#disappear {
+    display: none;
+}
+
+.filter {
+    height: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#color, #sort {
+    width: 150px;
+    font-size: 0.9em;
+    border-radius: 8px;
+    margin-left: 25px;
+    color: #093640;
+}
+
+/* Product grid */
+
+.products {
+    max-width: 1300px;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+
+.jacket img {
+    height: 60%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* JACKETS */
+
+.product-grid, 
+.about-product {
+    height: 550px;
+    width: 50%;
+    float: left;
+}
+
+/* product grid */
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.small {
+    height: 400px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.tiny,
+.tiny img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.large, 
+.large img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* about product */
+
+.product-text {
+    height: 250px;
+    width: 65%;
+}
+
+.form {
+    height: 300px;
+    width: 40%;
+}
+
+.form label {
+    display: inline-block;
+}
+
+#size {
+    height: 25px;
+    width: 200px;
+    display: flex;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/* Media queries */
+
+@media (min-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .jacket {
+        margin: auto;
+     }
+}
+
+@media (max-width: 1000px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .small {
+        display: none;
+    }
+
+    .form {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:850px) {
+    .product-grid, 
+    .about-product {
+      height: 450px;
+      width: 100%;
+      float: left;
+    }
+
+    .about-product {
+       margin-left: 15%;
+    }
+}
+
+@media (max-width: 650px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
