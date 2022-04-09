@@ -54,6 +54,11 @@ nav li {
     padding: 5px;
 }
 
+li img {
+    height: 70px;
+    width: 70px;
+}
+
 a {
     text-decoration: none;
     color: #093640;
