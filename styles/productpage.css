@@ -92,7 +92,8 @@ h1{
     display: inline-block;
 }
 
-#size {
+#size, 
+#sized {
     height: 25px;
     width: 200px;
     display: flex;
