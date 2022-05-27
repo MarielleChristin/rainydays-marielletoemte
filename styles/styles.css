@@ -105,77 +105,46 @@ label,
 
 .welcome {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-image: url("../images/welcome-background.jpg");
+    background-image: url("../images/photo-1533836555383-8c5aa1844aaf.webp");
     background-size: cover;
     background-color: #818181;
-    min-height: 500px;
+    background-position: 50% 70%;
+    max-height: 500px;
     background-repeat: no-repeat;
     color: #093640;
 }
 
-.welcome-images {
-    position: relative;
+.welcome-card {
+   min-height: 18em;
+   max-width: 40%;
+   padding: 3% 3%;
+   background-color: rgba(255,255,255,70%);
+   overflow: auto;
 }
 
-.welcome-images__styling {
-    background-image: url("../images/welcome-image_styling.jpg");
-    height: 100px;
-    width: 250px;
-    margin-top: 40%;
-    left: 20%;
-    border-radius: 20px;
-    position: absolute;
-    opacity: 70%;
-}
-
-.welcome-images__product {
-    width: 50%;
-    left: 40%;
-    top: 8%;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 10;
-}
-
-.welcome-images__product img {
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-}
-.welcome-content {
-    height: 50%;
-    width: 60%;
-    margin-top: 20%;
-}
-
-.welcome-content h1 {
+.welcome-card h1 {
     font-size: 1.5em;
     text-align: left;
 }
 
-.welcome-content p {
+.welcome-card p {
     font-size: 1.2em;
     margin-bottom: 30px;
+    line-height: 150%;
+    max-width: 800px;
 }
 
-.welcome-content .cta {
+.welcome-card .cta {
     background-color: #C64700;
     color: #fff;
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 10px;
     font-size: 1em;
+    line-height: 150%;
 }
 
 /*  New in section  */
-
-.new-in {
-    display: flex;
-    max-width: 100%;
-    margin: 50px auto;
-    padding-left: 5%;
-}
 
 .title-newin {
     color: #093640;
@@ -184,25 +153,51 @@ label,
     padding-top: 20px;
 }
 
+.new-in {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 50px auto;
+    margin-bottom: 7%;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
 .new-in .products {
-    width: 25%;
-    flex-direction: column;
+    min-height: 300px;
 }
 
 .products img {
-    border-radius: 20px;
-    width: 80%;
+    width: 12em;
+    height: 12em;
+    border-radius: 10px;
 }
+
 
 /* footer */
 
 footer {
-    text-align: center;
-    background-color: #77543F;
-    color: #fff;
-    padding: 20px;
-    overflow: hidden;
-    width: auto;
+    border-top: 0.7em solid #77543F;
+    border-bottom: 0.7em solid #77543F;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    color: #000;
+    padding: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social img {
+    height: 2em;
+    float: left;
+    margin: 0.5em;
+}
+
+.social,
+.copy,
+.location {
+    width: 200px;
 }
 
 /* About page */
@@ -217,9 +212,9 @@ footer {
 
 .about-company {
     text-align: center;
-    width: auto;
+    width: 60%;
     min-height: 300px;
-    margin: 20px 25px;
+    margin: 3% auto;
 }
 
 /* contact page */
@@ -296,36 +291,6 @@ footer {
     }
 }
 
-
-/* tablet styles */
-@media (max-width:1100px) {
-
-    .welcome {
-        min-height: 400px;
-        font-size: 1em;
-    }
-    .welcome-images__styling {
-        display: none;
-     }
-     
-     .welcome-images__product {
-         height: 350px;
-         width: 50%;
-         top: 6%;
-     }
-     
-     .welcome-content {
-         height: 250px;
-         width: 250px;
-         margin-top: 12%;
-     }
-     
-     .welcome-content p {
-         font-size: 1.0em;
-         margin-top: 10%;
-     }
-}
-
 /* mobile styles */
 
 @media (max-width:700px) { 
@@ -340,36 +305,26 @@ footer {
         display: none;
     }
 
-    .welcome {
-        min-height: 200px;
-    }
-
-    .welcome-images {
-        display: none;
-    }
-
-    .welcome-content {
-        font-size: 0.8em;
-        padding-left: 15%;
-    }
+    .welcome-card {
+        min-height: 18em;
+        max-width: 100%;
+        padding: 6rem 2rem;
+        background-color: rgba(255,255,255,70%);
+     }
+     
+     .welcome-card .cta {
+         background-color: #C64700;
+         color: #fff;
+         text-decoration: none;
+         padding: 15px 50px;
+         border-radius: 10px;
+         font-size: 1em;
+         line-height: 150%;
+     }
 
     /*  New in section  */
 
-    .new-in {
-    display: flex;
-    flex-wrap: wrap;
-    }
 
-    .title-newin {
-    color: #093640;
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-    }
-
-    .new-in .products {
-      width: 50%;
-    }
 
     /* contact */
     .contact-form,

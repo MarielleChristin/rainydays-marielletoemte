@@ -5,17 +5,18 @@ h1{
 
 /* filter section */
 
-#disappear {
+.disappear {
     display: none;
 }
 
 .filter {
-    height: 30px;
     text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 5%;
 }
 
-#color, #sort {
+#color,
+#sort {
     width: 150px;
     font-size: 0.9em;
     border-radius: 8px;
@@ -26,17 +27,17 @@ h1{
 /* Product grid */
 
 .products {
-    max-width: 1300px;
-    display: grid;
-    margin: 0 auto;
-    grid-gap: 1rem;
-    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    gap: 12%;
 }
 
 .jacket img {
-    height: 60%;
-    width: 50%;
-    border-radius: 5px;
+    width: 12em;
+    height: 12em;
+    border-radius: 10px;
 }
 
 /* JACKETS */
@@ -67,6 +68,10 @@ h1{
     width: 100px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+.small img:hover {
+    opacity: 50;
 }
 
 .large, 
@@ -101,29 +106,10 @@ h1{
     text-align: left;
 }
 
+
 /* Media queries */
 
-@media (min-width: 1200px) {
-    .products {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 1200px) {
-    .products {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .jacket {
-        margin: auto;
-     }
-}
-
 @media (max-width: 1000px) {
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .small {
         display: none;
     }
@@ -146,9 +132,11 @@ h1{
     }
 }
 
-@media (max-width: 650px) {
-    .products {
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 600px) {
+    .filter {
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 5%;
     }
 
 }
