@@ -17,7 +17,7 @@ form label {
     background-color: #C64700;
     color: #fff;
     border-radius: 5px;
-    height: 30px;
+    height: 40px;
     width: 200px;
     font-size: 1em;
 }
@@ -37,26 +37,27 @@ form label {
 
 .left {
     text-align: left;
+    float: left;
 }
 
 .right {
     text-align: right;
 }
 
+.form-error {
+    display: none;
+    color:#C64700;
+    margin: 5px auto;
+}
+
 
 /* SUCCESS PAGE */
 
 .success {
-    width:max-content;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-td {
-    width: 150px;
-    height: 30px;
-    border-bottom: solid 1px #093640;
 }
 
 img {
@@ -68,8 +69,9 @@ img {
     color: #fff;
     border-radius: 5px;
     height: 30px;
-    width: 200px;
+    width: 300px;
     font-size: 1em;
+    margin-top: 30px;
 }
 
 footer {

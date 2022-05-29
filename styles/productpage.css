@@ -30,8 +30,9 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 300px;
+    min-height: 300px;
     gap: 12%;
+    padding-bottom: 2%;
 }
 
 .jacket img {

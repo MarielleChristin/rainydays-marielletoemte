@@ -23,7 +23,7 @@
     <a class="skip-main" href="#main">Skip to main content</a>
     <a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="Logo home" class="logo"></a>
     <div class="hamburger">
-      <label for="hamburger"><img src="icons/menu.jpg"></label>
+      <label for="hamburger"><img src="icons/menu.jpg" alt="hamburger button"></label>
       <input type="checkbox" id="hamburger">
       <section class="main-menu">
         <nav>
@@ -48,17 +48,30 @@
    </section>
  </header>
  <main>
+   <section class="contact-img"></section>
    <h1 id="main" tabindex="-1">How can we help you?</h1>
    <section class="contact-form">
-     <form class="contact">
-       <label for="name">Full name</label>
-       <input type="text" id="name" name="name">
-       <label for="email">Email adress</label>
-       <input type="email" id="email" name="email">
-       <label for="subject">Subject</label>
-       <input type="text" id="subject" name="subject">
-       <label for="message">Message</label>
-       <textarea id="message" name="message" rows="4" cols="35"></textarea>
+     <form id="contact">
+      <div id="contact-lable">
+        <label for="fullName">Full name (required)</label>
+         <input type="text" id="fullName" name="fullName" required>
+         <div class="form-error" id="fullNameError">Please enter your full name</div> 
+      </div> 
+      <div id="contact-lable">
+        <label for="email">Email adress (required)</label>
+         <input type="email" id="email" name="email" required>
+         <div class="form-error" id="emailError">Please enter a valid email adress</div>
+      </div>
+      <div id="contact-lable">
+         <label for="subject">Subject (required)</label>
+         <input type="text" id="subject" name="subject" required>
+         <div class="form-error" id="subjectError">Must be longer than 5 characthers</div>
+      </div>
+      <div id="contact-lable">
+       <label for="message">Message (required)</label>
+       <textarea id="message" name="message" rows="4" cols="35" required></textarea>
+       <div class="form-error" id="messageError">Must be longer than 15 charachters</div>
+      </div>
        <input type="submit" value="Submit" class="submit">
      </form>
    </section>
@@ -72,6 +85,18 @@
      <p><b>0900900000</b></p>
    </section>
  </main>
- <footer>Copyright&copy;</footer>
+ <footer>
+  <div class="social">
+    <div><a href="https://www.instagram.com/noroff/"><img src="icons/instagram-2.png" alt="instagram logo"></a></div>
+    <div><a href="https://www.facebook.com/noroff/"><img src="icons/facebook-circular-logo-2.png" alt="facebook logo"></a></div>
+    <div><a href="https://www.youtube.com/c/NoroffAS"><img src="icons/youtube-2.png" alt="youtube logo"></a></div>
+  </div>
+  <div class="copy">Copyright&copy;</div>
+  <div class="location">
+    Headquarters located in
+    Oslo, Norway
+  </div>
+ </footer>
+ <script src="/js/script.js"></script>
 </body>
 </html>

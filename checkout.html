@@ -23,7 +23,7 @@
     <a class="skip-main" href="#main">Skip to main content</a>
     <a href="index.html"><img src="images/RainyDays_Logo.jpg" alt="Logo home" class="logo"></a>
     <div class="hamburger">
-      <label for="hamburger"><img src="icons/menu.jpg"></label>
+      <label for="hamburger"><img src="icons/menu.jpg" alt="hamburger button"></label>
       <input type="checkbox" id="hamburger">
       <section class="main-menu">
         <nav>
@@ -49,80 +49,84 @@
  </header>
  <main>
    <h1 id="main" tabindex="-1">Checkout</h1>
-   <form>
+   <form >
      <section class="first">
        <fieldset>
         <h2>Shipping details</h2>
-        Required fields&#42;
-        <p>
-        <label for="fullname">Full name&#42;</label>
-        <input type="text" id="fullname" name="fullname">
-        </p>
-        <p>
-        <label for="country">Country&#42;</label>
-        <input type="text" id="country" name="country">
-        </p>
-        <p>
-        <label for="adress">Adress&#42;</label>
+        <div>
+          <label for="fullName">Full name (required)</label>
+          <input type="text" id="fullName" name="fullName">
+        </div>
+        <div>
+         <label for="country">Country (required)</label>
+          <input type="text" id="country" name="country">
+        </div>
+        <div>
+        <label for="adress">Adress (required)</label>
         <input type="text" id="adress" name="adress">
-        </p>
-        <p>
-        <label for="zip">Postcode/ ZIP&#42;</label>
+        </div>
+        <div>
+        <label for="zip">Postcode/ ZIP (required)</label>
         <input type="number" id="zip" name="zip">
-        </p>
+        </div>
         <h2>Contact information</h2>
-        <label for="email">Email&#42;</label>
+        <label for="email">Email (required)</label>
         <input type="text" id="email" name="email">
-        <p>you will be able to create an account after purchasing</p>
+        <div>you will be able to create an account after purchasing</div>
        </fieldset>
      </section>
      <section class="second">
        <fieldset>
-         <h2>Payment method</h2>
+         <h2>Payment method (required)</h2>
          <fieldset>
            <input type="radio" name="payment" value="card" id="card"><label for="card" class="radio">Card</label>
-          <p>
-            <label for="number">Card number&#42;</label>
+          <div>
+            <label for="number">Card number (required)</label>
             <input type="tel" id="number" name="number">
-          </p>
-          <p>
-            <label for="date">Expiration date&#42;</label>
+          </div>
+          <div>
+            <label for="date">Expiration date (required)</label>
             <input type="date" id="date" name="date">
-          </p>
+          </div>
          </fieldset>
          <fieldset>
           <input type="radio" name="payment" value="paypal" id="paypal"><label for="paypal" class="radio">PayPal</label>
          </fieldset>
        </fieldset>
      </section>
-   </form>
+    </form>
    <section class="third">
     <fieldset>
       <div class="order">
         <h2>Your order</h2>
-        <table>
-          <tr>
-            <td class="left">PRODUCT</td>
-            <td class="right">TOTAL</td>
-          </tr>
-          <tr>
-            <td class="left">Rondane</td>
-            <td class="right">NOK599</td>
-          </tr>
-          <tr>
-            <td class="left">Shipping</td>
-            <td class="right">FREE SHIPPING</td>
-          </tr>
-          <tr>
-            <td class="left">TOTAL</td>
-            <td class="right">NOK599</td>
-          </tr>
-        </table>
-        <p><a href="success.html"><input type="submit" value="Place order" id="order"></a></p>
+          <div class="left">
+            <p>PRODUCT</p>
+            <p>Rondane</p>
+            <p>Shipping</p>
+            <p>TOTAL</p>
+          </div>
+          <div class="right">
+            <p>TOTAL</td>
+            <p>NOK599</p>
+            <p>FREE SHIPPING</p>
+            <p>NOK599</p>
+          </div>
+        <a href="success.html"><input type="submit" value="Place order" id="order"></a>
       </div>
     </fieldset>
   </section>
  </main>
- <footer>Copyright&copy;</footer>
+ <footer>
+  <div class="social">
+    <div><a href="https://www.instagram.com/noroff/"><img src="icons/instagram-2.png" alt="instagram logo"></a></div>
+    <div><a href="https://www.facebook.com/noroff/"><img src="icons/facebook-circular-logo-2.png" alt="facebook logo"></a></div>
+    <div><a href="https://www.youtube.com/c/NoroffAS"><img src="icons/youtube-2.png" alt="youtube logo"></a></div>
+  </div>
+  <div class="copy">Copyright&copy;</div>
+  <div class="location">
+    Headquarters located in
+    Oslo, Norway
+  </div>
+ </footer>
 </body>
 </html>
