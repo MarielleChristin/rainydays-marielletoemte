@@ -24,6 +24,11 @@ h1{
     color: #093640;
 }
 
+.details {
+    height:auto;
+    width: auto;
+}
+
 /* Product grid */
 
 .products {
@@ -35,7 +40,11 @@ h1{
     padding-bottom: 2%;
 }
 
-.jacket img {
+.jacket {
+    height:350px;
+}
+
+.img {
     width: 12em;
     height: 12em;
     border-radius: 10px;
