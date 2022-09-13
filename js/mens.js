@@ -8,7 +8,7 @@ async function getProducts(url){
   products.forEach(function(product){
     productContainer.innerHTML += ` 
     <div class="jacket"> 
-    <a href="mensjacket.html?id=${product.id}">
+    <a href="mensjacket.html?productID=${product.id}">
     <div class="image"> <img src="${product.images[0].src}"><div> 
     <div class="product-title"><h2>${product.name}</h2></div>
     <div class="price">${product.prices.regular_price}</div>

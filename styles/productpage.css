@@ -103,12 +103,13 @@ h1{
     width: 40%;
 }
 
-.form label {
+.form label{
     display: inline-block;
+    color: #000000;
 }
 
 #size, 
-#sized {
+#color-product {
     height: 25px;
     width: 200px;
     display: flex;
