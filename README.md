@@ -5,8 +5,15 @@
 ## Description
 
 This project was my submission for the cross-course project "Rainy days" at Noroff.
-For this assignment the goal is to deliver a functioning and responsive website with the previously chosen assignment brief from Design 1. 
-The site needs to cover all pages listed in the site architecture from the chosen brief - for my brief that covers an index page, a product overview page, a product specific page, an about page, contact page, a checkout page and lastly, a checkout success page.
+For this assignment the goal is to deliver a functioning and responsive website. 
+The site needs to cover all pages listed in the site architecture from the chosen brief.
+For my brief that covers an 
+-index page
+- a product overview page
+- a product specific page 
+- an about page, contact page
+- a checkout page and lastly
+- a checkout success page.
 
 ## Built With
 
